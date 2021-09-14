@@ -1,0 +1,219 @@
+@font-face {
+    font-family: 'JSDongkang-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/JSDongkang-RegularA1.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'JSDongkang-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/JSDongkang-BoldA1.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.body,
+html,
+root,
+document {
+    display: block;
+    height: 500px;
+    font-family: JSDongkang-Bold;
+}
+
+.wrap-login100 {
+    width: 700px;
+    height: 1100px;
+    position: absolute;
+    margin: 80px 80px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 30px 55px 33px 55px;
+    box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+    -o-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+    -ms-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.alert {
+    width: 100% !important;
+}
+
+.blue {
+    background-color: #38a7d0;
+}
+
+.blue>button {
+    background-color: #38a7d0;
+}
+
+.blue>button:hover {
+    background-color: #72c1de;
+}
+
+.green {
+    background-color: #568857;
+}
+
+.green>button {
+    background-color: #568857;
+}
+
+.green>button:hover {
+    background-color: #568857;
+}
+
+.orange {
+    background-color: #568857;
+}
+
+.orange>button {
+    background-color: #568857;
+}
+
+.orange>button:hover {
+    background-color: #568857;
+}
+
+
+/* 월~금 */
+
+.purple {
+    background-color: #e7e689;
+}
+
+.purple>button {
+    background-color: #e7e689;
+}
+
+.purple>button:hover {
+    background-color: #e7e689;
+}
+
+.white {
+    background-color: #fff;
+    color: #555;
+}
+
+.white>h1 {
+    color: #000;
+}
+
+.white>button {
+    background-color: #f3f3f3;
+    color: #555;
+}
+
+.white>button:hover {
+    background-color: #e3e3e3;
+}
+
+
+/*
+That part is just for the form
+*/
+
+.colorfulForm {
+    width: 350px;
+    height: 300px;
+    padding-top: 15%;
+    margin: 60px auto;
+    transform: scale(2);
+    -webkit-transform: scale(2);
+}
+
+.colorfulForm input,
+.colorfulForm textarea,
+.colorfulForm select {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    max-width: 350px;
+    padding: 5px;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    font-family: JSDongkang-Bold;
+}
+
+
+/* 여기서  길이 바꿈 */
+
+.colorfulForm label {
+    display: block;
+    font-family: JSDongkang-Bold;
+    margin: 10px 0 5px 0;
+}
+
+.colorfulForm button {
+    width: 100px;
+    margin: 3px 7px;
+    padding: 5px;
+    color: #fff;
+    border-style: none;
+}
+
+
+/* 여기 추가 */
+
+#mode {
+    width: 100%;
+    max-width: 100px;
+    margin: 1.8%;
+}
+
+#btn_add {
+    width: 50%;
+    margin: 1% 80px;
+    font-family: JSDongkang-Bold;
+}
+
+#btn_submit {
+    float: right;
+    font-family: JSDongkang-Bold;
+}
+
+#btn_cancel {
+    float: left;
+    font-family: JSDongkang-Bold;
+}
+
+.btn {
+    width: 100%;
+    max-width: 30px;
+    background-color: #568857;
+    font-family: JSDongkang-Bold;
+}
+
+input.img_button {
+    background: url("../qr-code.png") no-repeat;
+    border: none;
+    max-width: 32px;
+    height: 32px;
+    cursor: pointer;
+    float: right;
+}
+
+#label_set {
+    width: 200px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 1% 70px;
+    font-family: JSDongkang-Bold;
+}
+
+#alarm {
+    margin: 1% 70px;
+    width: 100%;
+    max-width: 200px;
+    font-family: JSDongkang-Bold;
+}
+
+#alarm_add {
+    float: right;
+    font-family: JSDongkang-Bold;
+}

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Medal</title>
+    <link rel="stylesheet" href="fontawesome-5.5/css/all.min.css" />
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/tooplate-infinite-loop.css" />
+    <link rel="stylesheet" href="css/button.css" />
+    <!--
+Tooplate 2117 Infinite Loop
+https://www.tooplate.com/view/2117-infinite-loop
+-->
+
+</head>
+<style>
+    @font-face {
+        font-family: 'JSDongkang-Regular';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/JSDongkang-RegularA1.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: 'JSDongkang-Bold';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/JSDongkang-BoldA1.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+</style>
+
+
+<body>
+    <!-- Hero section -->
+    <section id="infinite" class="text-white tm-font-big tm-parallax">
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-md tm-navbar" id="tmNav">
+            <div class="container">
+                <div class="tm-next">
+                    <a href="#infinite" class="navbar-brand">Medal</a>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars navbar-toggler-icon"></i>
+          </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link tm-nav-link" href="#infinite" style="color:#707070">홈</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tm-nav-link" onclick="location.href='drug.html'" style="color:#707070">복약 알람</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tm-nav-link" onclick="location.href='calendar.html'" style="cursor:pointer;color:#707070">일정</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tm-nav-link" onclick="location.href='./examples/dashboard.html'" style="cursor:pointer;color:#707070">My 건강</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tm-nav-link" onclick="location.href='contact.html'" style="cursor:pointe;color:#707070">고객 센터</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="text-center tm-hero-text-container">
+            <div class="tm-hero-text-container-inner">
+                </br>
+                <h2 class="tm-hero-title">Medal</h2>
+                </br>
+                <p class="tm-hero-subtitle" style="color: rgb(5, 49, 5)">
+                    당신만을 위한 건강 관리,
+                    <br>
+                    </bold>지금 시작하세요!</bold>
+                    </br>
+                </p>
+                </br>
+                </br>
+                </br>
+                <div style="font-size: 15px;font-family: 'JSDongkang-Bold';" class='button -regular center'><a href="signup.html">시작</a></div>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script src="magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="js/easing.min.js"></script>
+    <script src="js/jquery.singlePageNav.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/button.js"></script>
+    <script>
+        function getOffSet() {
+            var _offset = 450;
+            var windowHeight = window.innerHeight;
+
+            if (windowHeight > 500) {
+                _offset = 400;
+            }
+            if (windowHeight > 680) {
+                _offset = 300
+            }
+            if (windowHeight > 830) {
+                _offset = 210;
+            }
+
+            return _offset;
+        }
+
+        function setParallaxPosition($doc, multiplier, $object) {
+            var offset = getOffSet();
+            var from_top = $doc.scrollTop(),
+                bg_css = 'center ' + (multiplier * from_top - offset) + 'px';
+            $object.css({
+                "background-position": bg_css
+            });
+        }
+
+        // Parallax function
+        // Adapted based on https://codepen.io/roborich/pen/wpAsm        
+        var background_image_parallax = function($object, multiplier, forceSet) {
+            multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
+            multiplier = 1 - multiplier;
+            var $doc = $(document);
+            // $object.css({"background-attatchment" : "fixed"});
+
+            if (forceSet) {
+                setParallaxPosition($doc, multiplier, $object);
+            } else {
+                $(window).scroll(function() {
+                    setParallaxPosition($doc, multiplier, $object);
+                });
+            }
+        };
+
+        var background_image_parallax_2 = function($object, multiplier) {
+            multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
+            multiplier = 1 - multiplier;
+            var $doc = $(document);
+            $object.css({
+                "background-attachment": "fixed"
+            });
+
+            $(window).scroll(function() {
+                if ($(window).width() > 768) {
+                    var firstTop = $object.offset().top,
+                        pos = $(window).scrollTop(),
+                        yPos = Math.round((multiplier * (firstTop - pos)) - 186);
+
+                    var bg_css = 'center ' + yPos + 'px';
+
+                    $object.css({
+                        "background-position": bg_css
+                    });
+                } else {
+                    $object.css({
+                        "background-position": "center"
+                    });
+                }
+            });
+        };
+
+        $(function() {
+            // Hero Section - Background Parallax
+            background_image_parallax($(".tm-parallax"), 0.30, false);
+            background_image_parallax_2($("#contact"), 0.80);
+            background_image_parallax_2($("#testimonials"), 0.80);
+
+            // Handle window resize
+            window.addEventListener('resize', function() {
+                background_image_parallax($(".tm-parallax"), 0.30, true);
+            }, true);
+
+            // Detect window scroll and update navbar
+            $(window).scroll(function(e) {
+                if ($(document).scrollTop() > 120) {
+                    $('.tm-navbar').addClass("scroll");
+                } else {
+                    $('.tm-navbar').removeClass("scroll");
+                }
+            });
+
+            // Close mobile menu after click 
+            $('#tmNav a').on('click', function() {
+                $('.navbar-collapse').removeClass('show');
+            })
+
+            // Scroll to corresponding section with animation
+            $('#tmNav').singlePageNav({
+                'easing': 'easeInOutExpo',
+                'speed': 600
+            });
+
+            // Add smooth scrolling to all links
+            // https://www.w3schools.com/howto/howto_css_smooth_scroll.asp
+            $("a").on('click', function(event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 600, 'easeInOutExpo', function() {
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+
+
+        });
+    </script>
+</body>
+
+</html>>

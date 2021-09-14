@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Login V2</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!--===============================================================================================-->
+</head>
+
+<style>
+    .w3-green,
+    .w3-hover-green:hover {
+        color: #ffffff!important;
+        background-color: #F1F086!important;
+    }
+    
+    @font-face {
+        font-family: 'JSDongkang-Regular';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/JSDongkang-RegularA1.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: 'JSDongkang-Bold';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/JSDongkang-BoldA1.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    .wrap-login100 {
+        width: 700px;
+        height: 900px;
+        background: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        padding: 30px 55px 33px 55px;
+        box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+        -webkit-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+        -o-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+        -ms-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+    }
+    
+    ul {
+        list-style-type: none;
+    }
+    
+    li {
+        display: inline-block;
+    }
+    
+    input[type="checkbox"][id^="myCheckbox"] {
+        display: none;
+    }
+    
+    label {
+        border: 1px solid #fff;
+        padding: 10px;
+        display: block;
+        position: relative;
+        margin: 10px;
+        cursor: pointer;
+    }
+    
+    label:before {
+        background-color: white;
+        color: white;
+        content: " ";
+        display: block;
+        border-radius: 50%;
+        border: 1px solid grey;
+        position: absolute;
+        top: -5px;
+        left: -5px;
+        width: 25px;
+        height: 25px;
+        text-align: center;
+        line-height: 28px;
+        transition-duration: 0.4s;
+        transform: scale(0);
+    }
+    
+    label img {
+        height: 100px;
+        width: 100px;
+        transition-duration: 0.2s;
+        transform-origin: 50% 50%;
+    }
+    
+     :checked+label {
+        border-color: #ddd;
+    }
+    
+     :checked+label:before {
+        content: "✓";
+        background-color: grey;
+        transform: scale(1);
+    }
+    
+     :checked+label img {
+        transform: scale(0.9);
+        /* box-shadow: 0 0 5px #333; */
+        z-index: -1;
+    }
+</style>
+
+<body>
+
+    <div class="limiter">
+        <div class="container-login100">
+            <div class="wrap-login100">
+                <form class="login100-form validate-form">
+                    <br>
+                    <span class="login100-form-title p-b-26" style="font-family: 'JSDongkang-Bold'">
+						환영합니다
+					</span>
+
+                    <!--<span class="login100-form-title p-b-48">
+						<i class="zmdi zmdi-font"></i>
+                    </span>-->
+                    <div class="wrap-input101 ">
+
+                        <h1 style="font-size: 15px;font-family: 'JSDongkang-Bold';">4. 어느 분야의 도움을 받고 싶으신가요? </h1>
+                        <ul>
+                            <li>
+                                <input type="checkbox" id="myCheckbox1" />
+                                <label for="myCheckbox1"><img src="../img/1.jpg"style="width:70px;height: 70px;" /></label>
+                            </li>
+                            <li>
+
+                                <input type="checkbox" id="myCheckbox2" />
+                                <label for="myCheckbox2"><img src="../img/2.jpg" style="width:70px;height: 70px;"/></label>
+                            </li>
+                            <li>
+
+                                <input type="checkbox" id="myCheckbox3" />
+                                <label for="myCheckbox3"><img src="../img/3.jpg"style="width:70px;height: 70px;" /></label>
+                            </li>
+
+                            <li>
+
+                                <input type="checkbox" id="myCheckbox4" />
+                                <label for="myCheckbox4"><img src="../img/4.jpg"style="width:70px;height: 70px;" /></label>
+                            </li>
+                            <li>
+
+                                <input type="checkbox" id="myCheckbox5" />
+                                <label for="myCheckbox5"><img src="../img/5.jpg"style="width:70px;height: 70px;" /></label>
+                            </li>
+                            <li>
+
+                                <input type="checkbox" id="myCheckbox6" />
+                                <label for="myCheckbox6"><img src="../img/6.jpg"style="width:70px;height: 70px;" /></label>
+
+                            </li>
+                            <li>
+
+                                <input type="checkbox" id="myCheckbox7" />
+                                <label for="myCheckbox7"><img src="../img/7.jpg"style="width:70px;height: 70px;" /></label>
+                            </li>
+                            <li>
+
+                                <input type="checkbox" id="myCheckbox8" />
+                                <label for="myCheckbox8"><img src="../img/8.jpg" style="width:70px;height: 70px;"/></label>
+                            </li>
+
+                        </ul>
+                        <div class="wrap-input100 ">
+                            <input class="input100" type="text" name="name">
+                            <span class="focus-input100" data-placeholder="기타 입력"></span>
+                        </div>
+
+
+
+
+                        <div class="container-login100-form-btn">
+                            <div class="wrap-login100-form-btn">
+                                <div class="login100-form-bgbtn"></div>
+
+
+                                <a href='signup_5.html' class="login100-form-btn" style="font-family: 'JSDongkang-Bold';">
+                                        다음 페이지
+                                        
+                                    </a>
+                            </div>
+                        </div>
+                        <br>
+
+                        <div class="w3-container w3-green w3-round-xlarge" style="width:35%; text-align: center;font-family: 'JSDongkang-Bold'; ">35%</div>
+                    </div>
+
+
+
+            </div>
+
+
+
+
+        </div>
+        </form>
+    </div>
+    </div>
+    </div>
+
+
+    <div id="dropDownSelect1"></div>
+
+    <!--===============================================================================================-->
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/animsition/js/animsition.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/bootstrap/js/popper.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/daterangepicker/moment.min.js"></script>
+    <script src="vendor/daterangepicker/daterangepicker.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/countdowntime/countdowntime.js"></script>
+    <!--===============================================================================================-->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

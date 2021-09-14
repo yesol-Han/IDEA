@@ -1,0 +1,80 @@
+<meta charset="utf-8">
+<link rel="stylesheet" href="./css/style.css" />
+
+<body style="background-color: rgb(242, 242, 242);">
+    <div class="wrap-login100">
+        <section class="colorfulForm">
+            <label id="label_set">약 알람 설정 페이지</label>
+            <img id="img_btn" type="button" class="img_button" onclick="alert('처방전의 QR코드를 인식해주세요');"><br>
+
+            <label>약 이름</label>
+            <input type="text" id="title" placeholder="약 이름을 입력하세요" class="l2" /><br><br>
+
+            <label>알람 시간</label>
+            <button class="btn" id="btn_1">월</button>
+            <button class="btn" id="btn_2">화</button>
+            <button class="btn" id="btn_3">수</button>
+            <button class="btn" id="btn_4">목</button>
+            <button class="btn" id="btn_5">금</button>
+            <button class="btn" id="btn_6">토</button>
+            <button class="btn" id="btn_7">일</button>
+
+            <br/><br>
+            <select class="l2" id="mode">
+              <option value="">AM</option>
+              <option value="">PM</option>
+            </select>
+            <select class="l2" id="mode">
+              <option value="">1시</option>
+              <option value="">2시</option>
+              <option value="">3시</option>
+              <option value="">4시</option>
+              <option value="">5시</option>
+              <option value="">6시</option>
+              <option value="">7시</option>
+              <option value="">8시</option>
+              <option value="">9시</option>
+              <option value="">10시</option>
+              <option value="">11시</option>
+              <option value="">12시</option>
+            </select>
+            <select class="l2" id="mode">
+              <option value="">00분</option>
+              <option value="">05분</option>
+              <option value="">10분</option>
+              <option value="">15분</option>
+              <option value="">20분</option>
+              <option value="">25분</option>
+              <option value="">30분</option>
+              <option value="">35분</option>
+              <option value="">40분</option>
+              <option value="">45분</option>
+              <option value="">50분</option>
+              <option value="">55분</option>
+            </select><br/><br>
+            <button class="l1 blue" id="btn_add" onclick="alert('업데이트 예정입니다.');">알람 추가</button><br/>
+
+            <br>
+            <label>리마인더 시간주기</label>
+            <select class="l2" id="mode2">
+              <option value="">리마인드 없음</option>
+              <option value="">3분</option>
+              <option value="">5분</option>
+              <option value="">10분</option>
+              <option value="">15분</option>
+              <option value="">30분</option>
+              <option value="">1시간</option>
+            </select>
+            <br>
+            <label>메모</label>
+            <textarea id="myText" class="l2" placeholder="메모를 입력하세요"></textarea><br>
+            <br/>
+
+            <button class="l1 purple" id="btn_cancel" onClick="alert('취소되었습니다.');history.go(-1);">취소</button>
+            <button class="l1 green" id="btn_submit" onClick="alert('추가되었습니다.');history.go(-1);">알람 등록</button><br/>
+
+        </section>
+    </div>
+</body>
+
+<script type="text/javascript" src="./js/script.js"></script>
