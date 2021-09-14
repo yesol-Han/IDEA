@@ -7,4 +7,4 @@
 
 <img src="https://user-images.githubusercontent.com/55419946/133239239-78cd1a04-5214-4062-9973-7cdb4e321dad.png" width="60%" height="60%"/>
 
-*자세한 사항은 [(Blood Guard)_창의융합형_캡스톤디자인_프로그램_작품제안서.pdf](링크) 파일 또는 그 외 파일을 확인해주세요
+*자세한 사항은 [(Blood Guard)_창의융합형_캡스톤디자인_프로그램_작품제안서.pdf]((Blood Guard)_창의융합형_캡스톤디자인_프로그램_작품제안서.pdf) 파일 또는 그 외 파일을 확인해주세요
