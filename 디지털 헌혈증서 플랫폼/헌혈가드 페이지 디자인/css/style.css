@@ -1,0 +1,551 @@
+/*
+	Monochromed by TEMPLATED
+    templated.co @templatedco
+    Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+*/
+
+@charset 'UTF-8';
+
+/*********************************************************************************/
+
+
+/* Basic                                                                         */
+
+
+/*********************************************************************************/
+
+body {
+    background: #090909;
+}
+
+body,
+input,
+textarea,
+select {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 13pt;
+    line-height: 2em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* Change this to whatever font weight/color pairing is most suitable */
+
+strong,
+b {
+    font-weight: bold;
+    color: #000000;
+}
+
+em,
+i {
+    font-style: italic;
+}
+
+
+/* Don't forget to set this to something that matches the design */
+
+a {
+    color: #ff0000;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+sub {
+    position: relative;
+    top: 0.5em;
+    font-size: 0.8em;
+}
+
+sup {
+    position: relative;
+    top: -0.5em;
+    font-size: 0.8em;
+}
+
+hr {
+    border: 0;
+    border-top: solid 1px #ddd;
+}
+
+blockquote {
+    border-left: solid 0.5em #ddd;
+    padding: 1em 0 1em 2em;
+    font-style: italic;
+}
+
+p,
+ul,
+ol,
+dl,
+table {
+    margin-bottom: 1em;
+}
+
+header {}
+
+header h2 {
+    letter-spacing: -1px;
+    font-weight: 700;
+}
+
+header .byline {
+    display: block;
+    text-transform: uppercase;
+}
+
+footer {
+    margin-top: 1em;
+}
+
+br.clear {
+    clear: both;
+}
+
+
+/* Buttons */
+
+.button {
+    position: relative;
+    display: inline-block;
+    margin-top: 2em;
+    padding: 0.8em 1.5em;
+    background: #1d1d1d;
+    border-radius: 6px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1em;
+    color: #FFF;
+    -moz-transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
+    -webkit-transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
+    -o-transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
+    -ms-transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
+    transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #141414;
+    color: #FFF !important;
+}
+
+
+/* Sections/Articles */
+
+section,
+article {
+    margin-bottom: 3em;
+}
+
+section> :last-child,
+article> :last-child {
+    margin-bottom: 0;
+}
+
+section:last-child,
+article:last-child {
+    margin-bottom: 0;
+}
+
+.row>section,
+.row>article {
+    margin-bottom: 0;
+}
+
+
+/* Images */
+
+.image {
+    display: inline-block;
+}
+
+.image img {
+    display: block;
+    width: 100%;
+    border-radius: 6px;
+}
+
+.image.featured {
+    display: block;
+    width: 100%;
+    margin: 0 0 2em 0;
+}
+
+.image.full {
+    display: block;
+    width: 100%;
+    margin: 0 0 2em 0;
+}
+
+.image.left {
+    float: left;
+    margin: 0 2em 2em 0;
+}
+
+.image.centered {
+    display: block;
+    margin: 0 0 2em 0;
+}
+
+.image.centered img {
+    margin: 0 auto;
+    width: auto;
+}
+
+
+/* Lists */
+
+ul.default {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.default li {
+    padding: 0.50em 0em;
+}
+
+ul.style1 {
+    font-size: 0.90em;
+}
+
+ul.style1 li {
+    padding: 0.80em 0em;
+    line-height: 1.8em;
+}
+
+ul.style1 li img {
+    float: left;
+    margin-right: 1.50em;
+    border-radius: 6px;
+}
+
+ul.style1 .posted {
+    display: block;
+    margin-top: 1em;
+    padding: 0.50em 0em;
+}
+
+
+/*********************************************************************************/
+
+
+/* Header                                                                        */
+
+
+/*********************************************************************************/
+
+#header {
+    position: relative;
+    background: #ddd url(../images/main.png) no-repeat center;
+    background-size: cover;
+}
+
+#logo {
+    cursor: pointer;
+}
+
+#nav {}
+
+#nav ul {
+    margin: 0;
+}
+
+.topcorner {
+    position: absolute;
+    padding-right: 10%;
+    top: 0;
+    right: 0;
+}
+
+
+/*********************************************************************************/
+
+
+/* Banner                                                                        */
+
+
+/*********************************************************************************/
+
+#banner {
+    position: relative;
+    background: #333;
+    color: #fff;
+}
+
+
+/*********************************************************************************/
+
+
+/* Main                                                                          */
+
+
+/*********************************************************************************/
+
+#main {
+    position: relative;
+    background: #fff url(images/overlay.png) repeat;
+}
+
+.divider {
+    overflow: hidden;
+    border-top: 1px solid #dbdbdb;
+}
+
+
+/******등록.html******/
+
+.box {
+    display: block;
+    width: 100%;
+    border: solid 1px #dadada;
+    padding: 10px 14px 10px 14px;
+    box-sizing: border-box;
+    background: #fff;
+    position: relative;
+}
+
+.story {
+    display: block;
+    width: 100%;
+    color: #333;
+    padding: 10px 14px 10px 14px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.int {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 29px;
+    border: none;
+    background: #fff;
+    font-size: 15px;
+}
+
+.dday {
+    position: relative;
+    display: inline-block;
+    margin-top: 2em;
+    padding: 0.8em 1.5em;
+    border-radius: 6px;
+    text-decoration: orange;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: bold;
+    color: rgba(228, 55, 55, 0.815);
+    -moz-transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
+    -webkit-transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
+    -o-transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
+    -ms-transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
+    transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
+    cursor: pointer;
+}
+
+#bir_wrap {
+    display: table;
+    width: 100%;
+}
+
+#bir_yy {
+    display: table-cell;
+    width: 147px;
+}
+
+#bir_mm {
+    display: table-cell;
+    width: 147px;
+    vertical-align: middle;
+}
+
+#bir_dd {
+    display: table-cell;
+    width: 147px;
+}
+
+#bir_mm,
+#bir_dd {
+    padding-left: 10px;
+}
+
+.error_next_box {
+    margin-top: 9px;
+    font-size: 12px;
+    color: red;
+    display: none;
+}
+
+
+/*********************************************************************************/
+
+
+/* table*/
+
+.tg {
+    border-collapse: collapse;
+    border-color: #aaa;
+    border-spacing: 0;
+}
+
+.tg td {
+    background-color: #fff;
+    border-bottom-width: 1px;
+    border-color: #aaa;
+    border-style: solid;
+    border-top-width: 1px;
+    border-width: 0px;
+    color: #333;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    overflow: hidden;
+    padding: 10px 5px;
+    word-break: normal;
+}
+
+.tg th {
+    background-color: #f38630;
+    border-bottom-width: 1px;
+    border-color: #aaa;
+    border-style: solid;
+    border-top-width: 1px;
+    border-width: 0px;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    overflow: hidden;
+    padding: 10px 5px;
+    word-break: normal;
+}
+
+.tg .tg-o6bl {
+    background-color: #ffffff;
+    border-color: inherit;
+    color: #000000;
+    font-family: Impact, Charcoal, sans-serif !important;
+    ;
+    font-size: 18px;
+    text-align: center;
+    vertical-align: top
+}
+
+.tg .tg-wzs2 {
+    background-color: #9b9b9b;
+    border-color: inherit;
+    color: #000000;
+    font-family: Impact, Charcoal, sans-serif !important;
+    ;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: underline;
+    vertical-align: top
+}
+
+.tg .tg-84yn {
+    background-color: #ffffff;
+    border-color: #000000;
+    color: #000000;
+    font-family: Impact, Charcoal, sans-serif !important;
+    ;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: underline;
+    vertical-align: top
+}
+
+.tg .tg-2db8 {
+    background-color: #9b9b9b;
+    border-color: inherit;
+    color: #000000;
+    font-family: Impact, Charcoal, sans-serif !important;
+    ;
+    font-size: 18px;
+    text-align: center;
+    vertical-align: top
+}
+
+.tg .tg-ocfx {
+    background-color: #efefef;
+    border-color: inherit;
+    color: #000000;
+    font-family: Impact, Charcoal, sans-serif !important;
+    ;
+    font-size: 18px;
+    text-align: center;
+    vertical-align: top
+}
+
+.tg .tg-u5bf {
+    background-color: #efefef;
+    border-color: #000000;
+    color: #000000;
+    font-family: Impact, Charcoal, sans-serif !important;
+    ;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: underline;
+    vertical-align: top
+}
+
+
+/*********************************************************************************/
+
+
+/* Footer                                                                        */
+
+
+/*********************************************************************************/
+
+#footer {
+    position: relative;
+    background: #121212;
+    color: rgba(255, 255, 255, .4);
+}
+
+#footer header h2 {
+    color: #FFF;
+}
+
+
+/*********************************************************************************/
+
+
+/* Copyright                                                                     */
+
+
+/*********************************************************************************/
+
+#copyright {
+    position: relative;
+    padding: 3em 0em;
+    text-align: center;
+    color: rgba(255, 255, 255, .2);
+}
+
+#copyright .container {}
+
+#copyright a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, .3);
+}

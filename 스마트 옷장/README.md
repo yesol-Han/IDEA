@@ -1,6 +1,7 @@
-#스마트 옷장(SMART CLOSET)
+# 스마트 옷장(SMART CLOSET)
 
 "2019 SCH미디어랩스_학술제_출품작"
+- 옷장과 스타일러를 조합한 효율적인 옷 관리 시스템
 
 메인 아이디어:
 - 옷 자동 이동: 옷장과 스타일러의 자동이동을 통한 옷 청결화
@@ -16,4 +17,4 @@
 <img src="https://user-images.githubusercontent.com/55419946/133233857-1bde5fbf-8ffe-44e8-ae77-dec344a1c64d.png" width="60%" height="60%"/>    
 
 
-*자세한 사항은 ![SCH미디어랩스_학술제 포스터_SMART CLOSET.pdf](https://github.com/yesol-Han/IDEA/blob/main/%EC%8A%A4%EB%A7%88%ED%8A%B8%20%EC%98%B7%EC%9E%A5/SMART%20CLOSET%20%ED%95%99%EC%88%A0%EC%A0%9C%20%EC%9A%94%EC%95%BD.pdf) 파일 또는 그 외 파일을 확인해주세요
+*자세한 사항은 [SMART CLOSET 학술제 요약.pdf](https://github.com/yesol-Han/IDEA/blob/main/%EC%8A%A4%EB%A7%88%ED%8A%B8%20%EC%98%B7%EC%9E%A5/SMART%20CLOSET%20%ED%95%99%EC%88%A0%EC%A0%9C%20%EC%9A%94%EC%95%BD.pdf) 파일 또는 그 외 파일을 확인해주세요

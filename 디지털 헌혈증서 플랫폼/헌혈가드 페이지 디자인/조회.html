@@ -1,0 +1,261 @@
+<!DOCTYPE HTML>
+<!--
+	Monochromed by TEMPLATED
+    templated.co @templatedco
+    Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+
+<head>
+    <title>헌혈 가드</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/skel.min.js"></script>
+    <script src="js/skel-panels.min.js"></script>
+    <script src="js/init.js"></script>
+    <noscript>
+			<link rel="stylesheet" href="css/skel-noscript.css" />
+			<link rel="stylesheet" href="css/style.css" />
+		</noscript>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div id="header">
+        <div class="topcorner">
+            <p><a style="color: orange;">관리자</a>님 반갑습니다. | <a href="#" style="color: gray;">Logout</a> | <a href="#" style="color: blue;">마이페이지</a></p>
+        </div>
+
+        <div class="container">
+
+            <!-- Logo -->
+            <div id="logo">
+                <h1><a href="index.html">디지털 헌혈증서 플랫폼</a></h1>
+                <span>Blood Guard</span>
+            </div>
+
+            <!-- Nav -->
+            <nav id="nav">
+                <ul>
+                    <li><a href="등록.html">헌혈증 등록</a></li>
+                    <li><a href="관리.html">헌혈증 관리/사용</a></li>
+                    <li class="active"><a href="조회.html">헌혈증 조회</a></li>
+                    <li><a href="기부.html">헌혈증 기부</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </div>
+    <!-- Header -->
+
+    <!-- Main -->
+    <div id="main">
+        <div class="container">
+            <div class="row">
+
+                <!-- Content -->
+                <div id="content" class="12u skel-cell-important" style="padding-left: 20%;padding-right: 20%;">
+                    <section>
+                        <header>
+                            <h2>헌혈증 조회</h2>
+                            <span class="byline">사용자 본인의 헌혈증 조회만 가능합니다.</span>
+                        </header>
+
+                        <!-- 이름 -->
+                        <div id="content">
+                            <div>
+                                <h3 style="font-size: 2ch;">
+                                    <label for="id">이름</label>
+                                </h3>
+                                <span class="box">
+                                    <input type="text" id="id" class="int" maxlength="20">
+                                    <!-- <span class="step_url">@naver.com</span> -->
+                                </span>
+                                <span class="error_next_box"></span>
+                            </div>
+                        </div>
+                        <p></p>
+
+                        <!-- BIRTH -->
+                        <div>
+                            <h3 style="font-size: 2ch;"><label for="yy">생년월일</label></h3>
+
+                            <div id="bir_wrap">
+
+                                <!-- BIRTH_YY -->
+                                <div id="bir_yy">
+                                    <span class="box">
+                                        <input type="text" id="yy" class="int" maxlength="4" placeholder="년(4자)">
+                                    </span>
+                                </div>
+
+                                <!-- BIRTH_MM -->
+                                <div id="bir_mm">
+                                    <span class="box">
+                                        <select id="mm" style="border: none; width: 100%;">
+                                            <option>월</option>
+                                            <option value="01">1</option>
+                                            <option value="02">2</option>
+                                            <option value="03">3</option>
+                                            <option value="04">4</option>
+                                            <option value="05">5</option>
+                                            <option value="06">6</option>
+                                            <option value="07">7</option>
+                                            <option value="08">8</option>
+                                            <option value="09">9</option>                                    
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                        </select>
+                                        </span>
+                                </div>
+
+                                <!-- BIRTH_DD -->
+                                <div id="bir_dd">
+                                    <span class="box">
+                                        <input type="text" id="dd" class="int" maxlength="2" placeholder="일">
+                                    </span>
+                                </div>
+
+                            </div>
+                            <span class="error_next_box"></span>
+                        </div>
+                        <p></p>
+
+                        <!-- 휴대폰번호 -->
+                        <div>
+                            <h3 style="font-size: 2ch;"><label for="yy">휴대폰 번호:</label></h3>
+
+                            <div id="bir_wrap">
+
+                                <!-- 010 -->
+                                <div id="bir_yy">
+                                    <span class="box">
+                                        <select id="mm" style="border: none; width: 100%;">
+                                            <option value="">::선택::</option>
+                                            <option value="010">010</option>
+                                            <option value="011">011</option>
+                                            <option value="016">016</option>
+                                            <option value="017">017</option>
+                                            <option value="019">019</option>
+                                        </select>
+                                        </span>
+                                </div>
+
+                                <!-- 5183 -->
+                                <div id="bir_mm">
+                                    <span class="box">
+                                        <input type="text" id="yy" class="int" maxlength="4" placeholder="(4자)">
+                                    </span>
+                                </div>
+
+                                <!-- 9428 -->
+                                <div id="bir_dd">
+                                    <span class="box">
+                                        <input type="text" id="dd" class="int" maxlength="4" placeholder="(4자)">
+                                    </span>
+                                </div>
+
+                            </div>
+                            <span class="error_next_box"></span>
+                        </div>
+                        <p></p>
+
+                        <!-- JOIN BTN-->
+                        <!-- <script src="//code.jquery.com/jquery.min.js"></script> -->
+                        <script>
+                            $(function() {
+                                $('#click').click(function() {
+                                    $("#appear6").show();
+                                });
+                            });
+                        </script>
+
+                        <div class="btn_area" style="float: right;">
+                            <button id="click" class="button" type="button">
+                                    <span>조회하기</span>
+                                </button>
+                        </div>
+                        <div id="appear6" style="clear: both;" hidden>
+                            <br>
+                            <table class="tg">
+                                <thead>
+                                    <tr>
+                                        <th class="tg-baqh"> 이름 </th>
+                                        <th class="tg-baqh"> 헌혈 종류 </th>
+                                        <th class="tg-baqh"> 생년월일 </th>
+                                        <th class="tg-baqh"> 등록지 </th>
+                                        <th class="tg-baqh"> 헌혈증 번호 </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="tg-baqh">이준하</td>
+                                        <td class="tg-baqh">전혈</td>
+                                        <td class="tg-baqh">1999-10-01</td>
+                                        <td class="tg-baqh">의정부 헌혈의 집</td>
+                                        <td class="tg-baqh">0x70692E0AC489108eB7bAE6d1d4EBcA2eCAaf7708</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tg-yq6s">이준하(김승주)</td>
+                                        <td class="tg-yq6s">전혈</td>
+                                        <td class="tg-yq6s">1999-10-01</td>
+                                        <td class="tg-yq6s">순천향 헌혈의 집</td>
+                                        <td class="tg-yq6s">0x84848170deD188Be5A8802b4c124119C339Ba848</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tg-baqh">이준하(최세연)</td>
+                                        <td class="tg-baqh">혈장</td>
+                                        <td class="tg-baqh">1999-10-01</td>
+                                        <td class="tg-baqh">순천향 헌혈의 집</td>
+                                        <td class="tg-baqh">0x180a4ec51D2b0F22e9aad9b313F572EC34fA157c</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tg-yq6s">이준하(박승민)</td>
+                                        <td class="tg-yq6s">전혈</td>
+                                        <td class="tg-yq6s">1999-10-01</td>
+                                        <td class="tg-yq6s">수원역 헌혈의 집</td>
+                                        <td class="tg-yq6s">0xfBb6c40935555202E5D92Da774c9Bf8C8C011cC2</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tg-yq6s">이준하(이민서)</td>
+                                        <td class="tg-yq6s">전혈</td>
+                                        <td class="tg-yq6s">1999-10-01</td>
+                                        <td class="tg-yq6s">성안길 헌혈의 집</td>
+                                        <td class="tg-yq6s">0xf97E3f4953D7697Df9c8C794D0D20A0f686B96fB</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tg-baqh">이준하(황세희)</td>
+                                        <td class="tg-baqh">혈장</td>
+                                        <td class="tg-baqh">1999-10-01</td>
+                                        <td class="tg-baqh">영등포 헌혈의 집</td>
+                                        <td class="tg-baqh">0x82e3C799e1Bb73afa71c9000988138575a184ac6</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- 여기까지 -->
+                    </section>
+                    <!-- /Content -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Main -->
+
+    <div id="copyright">
+        <div class="container">
+            <p>Copyright © 2020 Blood Guard. All rights reserved.</p>
+            <address>Contact webmaster for more information. 041-530-헌혈가드</address> Design: <a href="index.html">Blood Guard</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
